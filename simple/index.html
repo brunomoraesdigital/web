@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Bruno Moraes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <main class="tela">
+        <header>
+            <div class="logotipo"><strong>Bruno Moraes</strong></div>
+            <nav>
+                <a href="#sobre">Sobre</a> |
+                <a href="#projetos">Projetos</a> |
+                <a href="#habilidades">Habilidades</a> |
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="botao-cv">Download CV</button>
+        </header>
+
+        <section class="destaque">
+            <div class="destaque-conteudo">
+                <h1>Olá, eu sou <span class="realce">Bruno Moraes</span>. Desenvolvedor Front-end focado em
+                    transformar código em interfaces intuitivas.</h1>
+                <p>Domino <span class="tag-html">&lt;HTML5&gt;</span>, <span class="tag-css">#CSS3{}</span>, <span
+                        class="tag-js">{JavaScript}</span>!</p>
+                <button class="botao-principal">Conheça meu trabalho</button>
+            </div>
+            <div class="destaque-imagem">
+                <div class="circulo-fundo"></div>
+                <img src="imagens/unnamed.png" alt="Foto de Perfil" class="imagem-perfil">
+            </div>
+        </section>
+
+        <hr class="divisor">
+
+        <section id="habilidades">
+            <h2 class="titulo-secao">HABILIDADES</h2>
+            <div class="grade-habilidades">
+                <div class="cartao-habilidade">
+                    <img src="imagens/html.png" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="cartao-habilidade">
+                    <img src="imagens/css.png" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="cartao-habilidade">
+                    <img src="imagens/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao-com-borda">
+            <h2 class="titulo-flutuante">PORTFÓLIO</h2>
+            <div class="grade-portfolio">
+                <div class="cartao-projeto">
+                    <div class="miniatura-projeto azul-claro"><img src="imagens/calculadora.png" alt="Calculadora"></div>
+                    <div class="info-projeto">
+                        <h3>Calculadora JS</h3>
+                        <p>Calculadora com operações básicas e lógica de eventos desenvolvida em <br>JavaScript
+                            puro.</p>
+                        <div class="links"><a href=""><i class="fa-brands fa-github"></i> <span>GitHub</span></a> <a
+                                href=""><i class="fa-regular fa-circle-play"></i> <span>Live Demo</span></a></div>
+                    </div>
+                </div>
+                <div class="cartao-projeto">
+                    <div class="miniatura-projeto roxo"><img src="imagens/landing-page.png" alt="Landing Page"></div>
+                    <div class="info-projeto">
+                        <h3>Landing Page Responsiva</h3>
+                        <p>Página de conversão moderna com design fluido e adaptável para todos os dispositivos e telas.
+                        </p>
+                        <div class="links"><a href=""><i class="fa-brands fa-github"></i> <span>GitHub</span></a> <a
+                                href=""><i class="fa-regular fa-circle-play"></i> <span>Live Demo</span></a></div>
+                    </div>
+                </div>
+                <div class="cartao-projeto cartao-escuro">
+                    <div class="miniatura-projeto azul-marinho"><img src="projeto_relogio.jpg" alt="Relógio"></div>
+                    <div class="info-projeto">
+                        <h3>Relógio Digital</h3>
+                        <p>Aplicação de tempo real utilizando o objeto Date.</p>
+                        <div class="links"><a href=""><i class="fa-brands fa-github"></i> <span>GitHub</span></a> <a
+                                href=""><i class="fa-regular fa-circle-play"></i> <span>Live Demo</span></a></div>
+                    </div>
+                </div>
+                <div class="cartao-projeto cartao-verde">
+                    <div class="miniatura-projeto verde"><img src="imagens/todo.png" alt="Tarefas"></div>
+                    <div class="info-projeto">
+                        <h3>Lista de Tarefas</h3>
+                        <p>Lista de tarefas simples para organizar atividades do dia a dia, com tudo salvo automaticamente.
+                        </p>
+                        <div class="links"><a href=""><i class="fa-brands fa-github"></i> <span>GitHub</span></a> <a
+                                href=""><i class="fa-regular fa-circle-play"></i> <span>Live Demo</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao-com-borda">
+            <h2 class="titulo-flutuante">SOBRE MIM</h2>
+            <div class="conteudo-sobre">
+                <img src="imagens/unnamed.png" alt="Avatar" class="avatar-mini">
+                <p>Olá, eu sou Bruno Moraes. Sou desenvolvedor front-end e estou sempre em busca de evolução. Gosto de transformar ideias em interfaces simples, organizadas e funcionais, utilizando HTML, CSS e JavaScript. Estou constantemente aprendendo e criando novos projetos para aprimorar minhas habilidades.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="secao-com-borda">
+            <h2 class="titulo-flutuante">CONTATO</h2>
+            <div class="container-contato">
+                <form class="formulario-contato">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <textarea placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="icones-sociais">
+                    <a href=""><i class="fa-brands fa-github"></i></a> <a href=""><i
+                            class="fa-brands fa-linkedin"></i></a> <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="rodape-final">
+            <p>Feito com ❤️ por Bruno Moraes - 2026</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+:root {
+    --bg-paper: #FDF7ED;
+    --accent-cyan: #00BCD4;
+    --navy: #1A2B3C;
+    --html-orange: #E44D26;
+    --css-blue: #2196F3;
+    --js-yellow: #F7DF1E;
+    --green: #27AE60;
+    --border-light: #B2EBF2;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit;        /* Faz o link herdar a cor do texto ao redor */
+    cursor: pointer;       /* Garante que a "mãozinha" apareça */
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to right, #808080 50%, #1A2B3C 50%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.tela {
+    background-color: var(--bg-paper);
+    width: 720px;
+    padding: 60px 60px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--navy);
+    margin: 0 10px;
+}
+
+.botao-cv {
+    background-color: var(--accent-cyan);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero - Foto NA FRENTE do círculo */
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+.destaque-imagem {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo-fundo {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: var(--accent-cyan);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.imagem-perfil {
+    position: relative;
+    z-index: 2;
+    width: 280px; /* Aumentado para sair um pouco do círculo */
+}
+
+.divisor {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin-bottom: 60px;
+}
+.titulo-secao {
+    text-align: center;
+}
+.info-projeto {
+    padding: 10px;
+}
+.info-projeto .links {
+    display: inline-flex;
+    width: 100%;
+justify-content: space-evenly;
+align-items: center;
+}
+/* Habilidades - Logos maiores */
+.grade-habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.cartao-habilidade {
+    background: white;
+    width: 180px; /* Card maior */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+    text-align: center;
+}
+
+.cartao-habilidade img {
+    width: 100px; /* Logo maior */
+    height: auto;
+}
+
+/* Bordas e Títulos Flutuantes */
+.secao-com-borda {
+    border: 2px solid var(--border-light);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 60px 0;
+    position: relative;
+}
+
+.titulo-flutuante {
+    position: absolute;
+    top: -20px; /* Sobe para cima da linha */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-paper); /* Esconde a linha atrás */
+    padding: 0 20px;
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--navy);
+}
+
+/* Portfólio - Ajuste de Imagem (Object-fit) */
+.grade-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.cartao-projeto {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.miniatura-projeto {
+    height: 200px;
+    overflow: hidden;
+}
+
+.miniatura-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garante que a imagem não vaze */
+    padding: 10px;
+}
+
+/* Contato - Layout lado a lado */
+.container-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario-contato {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-contato input, .formulario-contato textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+}
+
+.formulario-contato button {
+    background-color: var(--navy);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Ajuste no container para alinhar os dois blocos pelo centro vertical */
+.container-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Mudado de flex-end para center */
+}
+
+/* Ajuste nos ícones para garantir a centralização total no espaço da direita */
+.icones-sociais {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    color: var(--navy);
+    font-size: 2rem;
+    flex: 1;
+    height: 100%;
+    align-items: center;    /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 0;           /* Garante que não haja margens herdadas atrapalhando */
+}
+
+/* Rodapé */
+.rodape-final {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.botao-principal {
+    background: linear-gradient(135deg, var(--navy) 0%, #2c3e50 100%);
+    color: white;
+    padding: 10px 28px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(26, 43, 60, 0.2);
+    display: inline-block;
+}
+
+/* Efeito ao passar o mouse */
+.botao-principal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 43, 60, 0.3);
+    filter: brightness(1.1);
+}
+
+/* Efeito ao clicar */
+.botao-principal:active {
+    transform: translateY(0);
+}
+
+.avatar-mini {
+    width: 80px;         /* Largura e altura iguais são essenciais */
+    height: 80px;
+    background-color: #00BCD4;
+    border-radius: 50%;   /* Isso faz o círculo */
+    object-fit: cover;    /* Corta a imagem para preencher o círculo sem distorcer */
+    border: 3px solid var(--border-light); /* Uma bordinha para destacar do fundo */
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza e dá espaço para o texto abaixo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--navy);
+    margin: 0 15px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-cyan);
+}
+
+/* Linha que aparece embaixo do link ao passar o mouse */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-cyan);
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.tag-html {
+    color: #E44D26;
+}
+
+.tag-css {
+    color: blue;
+}
+
+.tag-js {
+    color: goldenrod;
+}
+
+.conteudo-sobre p {
+    text-align: center;
+}
