@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    color: #125f57;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.background-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 100%);
+    z-index: -1;
+}
+
+.container {
+    width: 900px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section,
+header {
+    padding: 40px;
+}
+
+.bg-verde {
+    background-color: #daf8f4;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px 40px;
+}
+
+.cabecalho nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.hero-texto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #26a69a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.habilidades h3 {
+    margin-bottom: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.skill-item img {
+    width: 40px;
+}
+
+.barra-progresso {
+    flex-grow: 1;
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.progresso {
+    height: 100%;
+    background: #26a69a;
+    border-radius: 5px;
+}
+
+.porcentagem {
+    font-weight: bold;
+    color: #26a69a;
+    min-width: 40px;
+}
+
+.projeto-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-card:hover,
+.card-voador:hover {
+
+}
+
+.projeto-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.projeto-card img,
+.placeholder-clima {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.placeholder-clima {
+    background: #004d40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.tech-icons {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #26a69a;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    gap: 10px;
+}
+
+.link-demo {
+    color: #26a69a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.sobre-conteudo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.foto-quadrada {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.contato-flex {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.card-voador {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.redes-sociais {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #15534d;
+}
+
+.redes-sociais i {
+    color: #26a69a;
+    margin-right: 10px;
+    font-size: 3rem;
+
+}
+
+.rodape {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.descritivo {
+    font-size: 1rem; /* Tamanho menor para o texto não ficar gigante */
+    color: #125f57;    /* Cor do seu projeto */
+    font-weight: 600;
+    margin-left: -5px;
+    margin-top: -5px;
+}
